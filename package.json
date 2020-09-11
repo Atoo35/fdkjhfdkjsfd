@@ -1,0 +1,30 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node .": "node run index.js"
+  },
+  "author": "Muhimur",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^4.0.0",
+    "discord-giveaways": "^4.2.1",
+    "discord.js": "^12.3.1",
+    "ffmpeg-static": "^4.2.7",
+    "fortune-cookie": "0.0.1",
+    "ms": "^2.1.2",
+    "node-fetch": "^2.6.0",
+    "opusscript": "0.0.7",
+    "random-puppy": "^1.1.0",
+    "simple-youtube-api": "^5.2.1",
+    "something-random-on-discord": "0.0.2",
+    "string-progressbar": "^1.0.1",
+    "weather-js": "^2.0.0",
+    "yt-search": "^2.3.0",
+    "ytdl-core": "^3.2.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
