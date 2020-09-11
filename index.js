@@ -46,7 +46,6 @@ client.on('ready', () => {
     const statuses = [
       "BACON ARMY | >help",
       "The chat",
-      "discord.gg/myusernamesthis",
       "3 Discord servers..."
     ]
 
@@ -116,17 +115,6 @@ client.on('message', async message => {
     if (commandFile.help.category == "fun" && !["383059277759381504", "373893905243963394", "323982743908384768"].some(uID => uID == message.author.id)) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
     if (commandFile.help.category == "helpCommand" && message.channel.name.includes("commands")) return message.reply("use this in a commands channel.").then(msg => msg.delete({ timeout: 3500 }));
     if (commandFile.help.category == "translateOnly" && !message.channel.name.includes("commands") && !message.member.hasPermission("ADMINISTRATOR")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
-
-
-    if (commandFile.help.category.endsWith("fun69") && message.member.roles.cache.some(r => ["713491881492873219", "264537419640995841"].includes(r.id)) && !message.channel.name.includes("staff-commands")) return message.reply("use this in a staff commands channel").then(msg => msg.delete({ timeout: 3500 }));
-    if (commandFile.help.category == "fun3" && !message.channel.name.includes("commands") && !message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
-    if (commandFile.help.category == "fun4" && !message.channel.name.includes("commands") && !message.member.hasPermission("ADMINISTRATOR")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
-    if (commandFile.help.category.endsWith("level5") && !message.member.roles.cache.some(r => ["609049237098987520"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES")) return;
-    if (commandFile.help.category.endsWith("level30") && !message.member.roles.cache.some(r => ["723305502569660466"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES")) return;
-    if (commandFile.help.category.endsWith("level30") && !message.member.roles.cache.some(r => ["723305502569660466"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES")) return;
-
-    if (commandFile.help.category.endsWith("level5") && message.member.roles.cache.some(r => ["609049237098987520"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES") && !message.channel.name.includes("commands")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
-    if (commandFile.help.category.endsWith("level30") && message.member.roles.cache.some(r => ["723305502569660466"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES") && !message.channel.name.includes("commands")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
     if (commandFile.help.category.endsWith("pings") && message.member.roles.cache.some(r => ["614954517959540757", "332200529449189376"].includes(r.id)) && !message.member.hasPermission("MANAGE_MESSAGES") && !message.channel.name.includes("commands")) return message.reply("use this in a commands channel").then(msg => msg.delete({ timeout: 3500 }));
 
 
